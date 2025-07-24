@@ -31,7 +31,7 @@ This project was developed as part of a Web Developer Internship task and includ
 
 ## 📷 Screenshots
 
-img1.png
-img2.png
-img3.png
-img4.png
+!(img1.png)
+!(img2.png)
+!(img3.png)
+!(img4.png)
