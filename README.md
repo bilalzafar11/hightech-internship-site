@@ -30,8 +30,7 @@ This project was developed as part of a Web Developer Internship task and includ
 - Google Fonts
 
 ## 📷 Screenshots
-
-!(img1.png)
-!(img2.png)
-!(img3.png)
-!(img4.png)
+![Screenshot 1](img1.png)
+![Screenshot 2](img2.png)
+![Screenshot 3](img3.png)
+![Screenshot 4](img4.png)
