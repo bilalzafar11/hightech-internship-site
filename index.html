@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Remote Internships | High Tech Software House</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="stylee.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <header class="navbar" aria-label="Main navigation">
     <div class="container nav-container">
-      <div class="logo-box" style="display: flex; align-items: center; gap: 10px;">
-        <img src="logo.jpg" alt="High Tech Logo" style="height: 50px; width: auto;" />
+      <div class="logo-box">
+        <img src="logo.jpg" alt="High Tech Logo" class="logo-img" />
         <h1 class="logo">High Tech Software House & Training Center</h1>
       </div>
       <nav>
@@ -26,77 +25,72 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-      <div class="container hero-content">
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
         <h2>Start Your Remote Internship Journey</h2>
         <p>Learn & earn with flexible, skill-building internships.</p>
         <a href="#contact" class="btn-primary" role="button">Apply Now</a>
       </div>
-    </section>
+      <div class="hero-image">
+        <img src="hero.jpg" alt="Remote Internship">
+      </div>
+    </div>
+  </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits-section">
-      <div class="container">
-        <h2 class="section-title">Why Choose Our Remote Internships?</h2>
-        <div class="benefits-grid">
-          <div class="benefit-item">
-            <i class="fas fa-clock benefit-icon"></i>
-            <h3>Flexible Timings</h3>
-            <p>Work when it suits your schedule from anywhere in the world.</p>
-          </div>
-          <div class="benefit-item">
-            <i class="fas fa-laptop-code benefit-icon"></i>
-            <h3>Real Project Experience</h3>
-            <p>Get hands-on experience by working on real industry projects.</p>
-          </div>
-          <div class="benefit-item">
-            <i class="fas fa-certificate benefit-icon"></i>
-            <h3>Certificate on Completion</h3>
-            <p>Receive an internship certificate that adds value to your resume.</p>
-          </div>
+  <section id="benefits" class="benefits-section">
+    <div class="container">
+      <h2 class="section-title">Why Choose Our Remote Internships?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <i class="fas fa-clock benefit-icon"></i>
+          <h3>Flexible Timings</h3>
+          <p>Work when it suits your schedule from anywhere in the world.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-laptop-code benefit-icon"></i>
+          <h3>Real Project Experience</h3>
+          <p>Get hands-on experience by working on real industry projects.</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-certificate benefit-icon"></i>
+          <h3>Certificate on Completion</h3>
+          <p>Receive an internship certificate that adds value to your resume.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-      <form class="contact-form" id="contactForm">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="form-group">
-          <label for="name" class="required">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-          <div class="error-message" id="nameError"></div>
-        </div>
-        <div class="form-group">
-          <label for="email" class="required">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          <div class="error-message" id="emailError"></div>
-        </div>
-        <div class="form-group">
-          <label for="message" class="required">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-          <div class="error-message" id="messageError"></div>
-        </div>
-        <button type="submit">Send Message</button>
-        <div class="form-message" id="formMessage"></div>
-      </form>
-    </section>
-  </main>
+  <section class="contact-section" id="contact">
+    <form class="contact-form" id="contactForm">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="form-group">
+        <label for="name" class="required">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <div class="error-message" id="nameError"></div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="required">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="error-message" id="emailError"></div>
+      </div>
+      <div class="form-group">
+        <label for="message" class="required">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        <div class="error-message" id="messageError"></div>
+      </div>
+      <button type="submit">Send Message</button>
+      <div class="form-message" id="formMessage"></div>
+    </form>
+  </section>
 
-  <!-- Footer -->
   <footer class="footer-section">
     <div class="container">
       <p>&copy; 2025 High Tech Software House. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scroll to Top Button -->
   <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
