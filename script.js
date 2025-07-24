@@ -1,13 +1,13 @@
-// Smooth Scroll for Navbar & "Apply Now" Button
+// ===== Smooth Scroll for Navbar & "Apply Now" Button with Easing =====
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute("href"));
-    if (target) target.scrollIntoView({ behavior: "smooth" });
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
 
-// Contact Form Validation
+// ===== Contact Form Validation =====
 document.getElementById("contactForm").addEventListener("submit", e => {
   e.preventDefault();
 
@@ -20,17 +20,17 @@ document.getElementById("contactForm").addEventListener("submit", e => {
   formMessage.textContent = "";
 
   let hasError = false;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   if (name.value.trim() === "") {
     name.nextElementSibling.textContent = "Name is required.";
     hasError = true;
   }
 
-  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
   if (email.value.trim() === "") {
     email.nextElementSibling.textContent = "Email is required.";
     hasError = true;
-  } else if (!emailPattern.test(email.value)) {
+  } else if (!emailRegex.test(email.value.trim())) {
     email.nextElementSibling.textContent = "Enter a valid email address.";
     hasError = true;
   }
@@ -52,7 +52,7 @@ document.getElementById("contactForm").addEventListener("submit", e => {
   }
 });
 
-// Scroll-To-Top Button
+// ===== Scroll-To-Top Button with Smooth Scroll =====
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
